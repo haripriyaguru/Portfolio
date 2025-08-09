@@ -1,11 +1,14 @@
-# Portfolio
-# Haripriya G - Personal Portfolio Website
+# <p align="center">🎨 Haripriya G - Personal Portfolio Website 🚀</p>
 
-## About The Project
+<p align="center">
+  <img src="https://via.placeholder.com/1200x600.png?text=Portfolio+Website+Showcase" alt="Portfolio Website Screenshot" />
+</p>
+
+## ✨ About The Project
 
 This is the source code for my personal portfolio website, designed to showcase my skills, projects, experience, education, and achievements in a professional and engaging way. The site is built to be fully responsive, ensuring it looks great on all devices.
 
-### Key Features
+### <p style="color:#60a5fa">Key Features</p>
 * **Modern Design**: A clean, dark-themed user interface with a visually appealing color palette.
 * **Responsive Layout**: The site is built with Tailwind CSS, making it accessible and easy to navigate on both desktop and mobile devices.
 * **Dynamic Animations**: Utilizes GSAP (GreenSock Animation Platform) for subtle, smooth animations on page load and user interaction.
@@ -17,15 +20,14 @@ This is the source code for my personal portfolio website, designed to showcase 
     * **Achievements**: Highlights my performance in **TCS CodeVita** and lists my professional certifications, including **Microsoft Azure Fundamentals** and **NPTEL** courses on Cloud Computing and IoT.
     * **Contact**: Provides all relevant contact information and social media links.
 
-### Built With
+### <p style="color:#60a5fa">Built With</p>
+* <span style="color:#e34c26">**HTML5**</span>
+* <span style="color:#264de4">**CSS3**</span>
+* <span style="color:#38bdf8">**Tailwind CSS**</span>: A utility-first CSS framework for rapid UI development.
+* <span style="color:#82c64d">**GSAP**</span>: A powerful JavaScript animation library.
+* <span style="color:#808080">**particles.js**</span>: A lightweight JavaScript library for creating a particle background.
 
-* **HTML5**
-* **CSS3**
-* **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-* **GSAP**: A powerful JavaScript animation library.
-* **particles.js**: A lightweight JavaScript library for creating a particle background.
-
-## Getting Started
+## ⚙️ Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
@@ -37,7 +39,7 @@ You need a web browser to view the files. No other software is required unless y
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/haripriyaguru/Portfolio.git
+    git clone [https://github.com/haripriyaguru/Portfolio.git](https://github.com/haripriyaguru/Portfolio.git)
     ```
 2.  Navigate to the project directory:
     ```sh
@@ -45,11 +47,11 @@ You need a web browser to view the files. No other software is required unless y
     ```
 3.  Open the `index.html` file in your preferred web browser to view the website.
 
-## Contact
+## 📧 Contact
 
-* **Email**: haripriyagurunathan@gmail.com
-* **LinkedIn**: [https://www.linkedin.com/in/haripriya22/](https://www.linkedin.com/in/haripriya22/)
-* **GitHub**: [https://github.com/haripriyaguru](https://github.com/haripriyaguru)
+* **Email**: <a href="mailto:haripriyagurunathan@gmail.com">haripriyagurunathan@gmail.com</a>.
+* **LinkedIn**: <a href="https://www.linkedin.com/in/haripriya22/">linkedin.com/in/haripriya22</a>.
+* **GitHub**: <a href="https://github.com/haripriyaguru">github.com/haripriyaguru</a>.
 
 ---
 <p align="center">© 2025 Haripriya G. All Rights Reserved.</p>
