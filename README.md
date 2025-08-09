@@ -1,8 +1,6 @@
 # Portfolio
 # Haripriya G - Personal Portfolio Website
 
-![Project Showcase Image](https://via.placeholder.com/1200x600.png?text=Portfolio+Website+Screenshot)
-
 ## About The Project
 
 This is the source code for my personal portfolio website, designed to showcase my skills, projects, experience, education, and achievements in a professional and engaging way. The site is built to be fully responsive, ensuring it looks great on all devices.
