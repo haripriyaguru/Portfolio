@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - Haripriya G</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    body { background: linear-gradient(135deg, #0b1020, #111827); min-height: 100vh; position: relative; overflow-x: hidden; }
+    #particles-js { position: fixed; width: 100%; height: 100%; background-color: transparent; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: 0; pointer-events: none; }
+    .min-h-screen, .bg-gradient-to-r { position: relative; z-index: 1; }
+    .hover-scale { transition: transform 0.3s ease; }
+    .hover-scale:hover { transform: scale(1.05); }
+    .subtitle {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #93c5fd;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .subtitle:hover {
+      transform: scale(1.05);
+      color: #a78bfa;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-100">
+  <div id="particles-js" class="absolute inset-0 z-0"></div>
+  <!-- Navigation -->
+  <nav class="bg-gradient-to-r from-indigo-900 to-purple-900 p-4 shadow-lg sticky top-0 z-10">
+    <ul class="flex justify-center items-center max-w-5xl mx-auto space-x-3 md:space-x-4 text-white">
+      <li><a href="index.html" class="hover:text-yellow-300 hover-scale">Home</a></li>
+      <li><a href="skills.html" class="hover:text-yellow-300 hover-scale">Skills</a></li>
+      <li><a href="projects.html" class="hover:text-yellow-300 hover-scale">Projects</a></li>
+      <li><a href="experience.html" class="hover:text-yellow-300 hover-scale">Experience</a></li>
+      <li><a href="education.html" class="hover:text-yellow-300 hover-scale">Education</a></li>
+      <li><a href="achievements.html" class="hover:text-yellow-300 hover-scale">Achievements</a></li>
+      <li><a href="contact.html" class="hover:text-yellow-300 hover-scale">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Achievements Section -->
+  <section class="min-h-screen p-6 flex flex-col items-center">
+    <h2 class="subtitle mb-8">Achievements & Certifications</h2>
+    <div class="max-w-4xl w-full space-y-6">
+      <div class="bg-blue-900/60 backdrop-blur p-6 rounded-lg shadow-lg hover-scale">
+        <h3 class="text-2xl font-semibold text-indigo-300">Technical Achievements</h3>
+          <p class="text-gray-200 mt-2">TCS CodeVita Season 12: Cleared Round 1 and advanced to Round 2, securing rank 709 out of 100,000+ global participants (Top 1% performance).</p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-fuchsia-600 hover:bg-fuchsia-500 text-white px-4 py-2 rounded transition font-semibold ach-tech-btn"
+            data-title="Technical Achievement"
+            data-description="TCS CodeVita Season 12: Cleared Round 1 and advanced to Round 2, securing rank 709 out of 100,000+ global participants (Top 1% performance)."
+            data-image="tcs.jpg"
+          >View Details</a>
+      </div>
+      <div class="bg-blue-900/60 backdrop-blur p-6 rounded-lg shadow-lg hover-scale">
+        <h3 class="text-2xl font-semibold text-indigo-300">Certifications</h3>
+        <ul class="text-gray-200 mt-2 list-disc list-inside">
+          <li>NPTEL Cloud Computing – Scored 60% (2024)</li>
+          <li>NPTEL Internet of Things – Scored 58% (2024)</li>
+          <li>Microsoft Certified: Azure Fundamentals – Scored 857/1000 (2025)</li>
+        </ul>
+          <a href="#" class="inline-block mt-4 bg-fuchsia-600 hover:bg-fuchsia-500 text-white px-4 py-2 rounded transition font-semibold ach-certs-btn">View All Certifications</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Centered Modal for Achievements/Certifications -->
+    <div id="achModal" class="fixed inset-0 z-50 hidden items-center justify-center">
+      <div id="achOverlay" class="absolute inset-0 bg-black/60"></div>
+      <div class="relative bg-gray-900 text-gray-100 rounded-lg shadow-2xl w-11/12 max-w-2xl p-6 border border-indigo-700/40">
+        <button id="achClose" aria-label="Close" class="absolute top-3 right-3 text-gray-400 hover:text-white transition">&times;</button>
+        <h3 id="achTitle" class="text-2xl font-semibold text-indigo-300 mb-3"></h3>
+        <div id="achBody" class="text-gray-200 space-y-4"></div>
+      </div>
+    </div>
+
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 90, density: { enable: true, value_area: 800 } },
+        color: { value: '#60a5fa' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.35, random: false },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: '#60a5fa', opacity: 0.3, width: 1 },
+        move: { enable: true, speed: 2.5, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true }
+      }
+    });
+    gsap.from(".subtitle", { duration: 1, y: -50, opacity: 0, ease: "bounce.out" });
+    gsap.from(".hover-scale", { duration: 1, y: 50, opacity: 0, stagger: 0.2, ease: "power2.out" });
+
+    // Modal logic for achievements/certifications
+    const achModal = document.getElementById('achModal');
+    const achOverlay = document.getElementById('achOverlay');
+    const achClose = document.getElementById('achClose');
+    const achTitle = document.getElementById('achTitle');
+    const achBody = document.getElementById('achBody');
+
+    function openAchModal({ title, html }) {
+      achTitle.textContent = title || '';
+      achBody.innerHTML = html || '';
+      achModal.classList.remove('hidden');
+      achModal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeAchModal() {
+      achModal.classList.add('hidden');
+      achModal.classList.remove('flex');
+      achTitle.textContent = '';
+      achBody.innerHTML = '';
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Technical achievement button
+    document.querySelectorAll('.ach-tech-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const title = btn.dataset.title;
+        const description = btn.dataset.description;
+        const image = btn.dataset.image; // optional
+        const imageHtml = image ? `<img src="${image}" alt="${title}" class="w-full max-h-80 object-contain rounded" />` : '';
+        openAchModal({
+          title,
+          html: `<p class="text-gray-200">${description}</p>${imageHtml ? `<div class=\"pt-2\">${imageHtml}</div>` : ''}`,
+        });
+      });
+    });
+
+    // Certifications button opens in-page modal; each item has a "View Certificate" button
+    const certsHtml = `
+      <ul class="list-disc list-inside space-y-3">
+        <li class="flex items-start justify-between gap-3">
+          <span>NPTEL Cloud Computing – Scored 60% (2024)</span>
+          <a href="#" class="cert-view bg-indigo-600 hover:bg-indigo-500 text-white text-sm px-3 py-1.5 rounded" data-image="Cloud Computing_page-0001.jpg">View Certificate</a>
+        </li>
+        <li class="flex items-start justify-between gap-3">
+          <span>NPTEL Internet of Things – Scored 58% (2024)</span>
+          <a href="#" class="cert-view bg-indigo-600 hover:bg-indigo-500 text-white text-sm px-3 py-1.5 rounded" data-image="iot.jpg">View Certificate</a>
+        </li>
+        <li class="flex items-start justify-between gap-3">
+          <span>Microsoft Certified: Azure Fundamentals – Scored 857/1000 (2025)</span>
+          <a href="#" class="cert-view bg-indigo-600 hover:bg-indigo-500 text-white text-sm px-3 py-1.5 rounded" data-image="Azure .jpg">View Certificate</a>
+        </li>
+      </ul>
+    `;
+    document.querySelectorAll('.ach-certs-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openAchModal({ title: 'Certifications', html: certsHtml });
+      });
+    });
+
+    achClose.addEventListener('click', closeAchModal);
+    achOverlay.addEventListener('click', closeAchModal);
+
+    // Photo lightbox for certificates inside the achievements page
+    const certPhotoModal = document.createElement('div');
+    certPhotoModal.id = 'certPhotoModal';
+    certPhotoModal.className = 'fixed inset-0 z-50 hidden items-center justify-center';
+    certPhotoModal.innerHTML = `
+      <div id="certPhotoOverlay" class="absolute inset-0 bg-black/70"></div>
+      <div class="relative max-w-3xl w-11/12 max-h-[85vh] p-0 rounded-lg overflow-hidden shadow-2xl border border-indigo-700/40 bg-gray-900">
+        <button id="certPhotoClose" aria-label="Close certificate" class="absolute top-3 right-3 z-10 text-gray-200 bg-black/40 rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/60">&times;</button>
+        <img id="certPhotoImage" src="" alt="Certificate" class="block max-h-[80vh] w-auto h-auto mx-auto object-contain" />
+      </div>
+    `;
+    document.body.appendChild(certPhotoModal);
+
+    const certPhotoOverlay = certPhotoModal.querySelector('#certPhotoOverlay');
+    const certPhotoClose = certPhotoModal.querySelector('#certPhotoClose');
+    const certPhotoImage = certPhotoModal.querySelector('#certPhotoImage');
+
+    function openCertPhotoModal(src) {
+      if (!src) return;
+      certPhotoImage.src = src;
+      certPhotoModal.classList.remove('hidden');
+      certPhotoModal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }
+    function closeCertPhotoModal() {
+      certPhotoModal.classList.add('hidden');
+      certPhotoModal.classList.remove('flex');
+      certPhotoImage.src = '';
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Delegate clicks from within the achievements modal to open certificate images
+    achModal.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && target.classList.contains('cert-view')) {
+        e.preventDefault();
+        openCertPhotoModal(target.dataset.image || '');
+      }
+    });
+
+    certPhotoOverlay.addEventListener('click', closeCertPhotoModal);
+    certPhotoClose.addEventListener('click', closeCertPhotoModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeAchModal();
+        closeCertPhotoModal();
+      }
+    });
+  </script>
+</body>
+</html>
