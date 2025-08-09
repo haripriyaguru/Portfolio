@@ -1,9 +1,5 @@
 # <p align="center">🎨 Haripriya G - Personal Portfolio Website 🚀</p>
 
-<p align="center">
-  <img src="https://via.placeholder.com/1200x600.png?text=Portfolio+Website+Showcase" alt="Portfolio Website Screenshot" />
-</p>
-
 ## ✨ About The Project
 
 This is the source code for my personal portfolio website, designed to showcase my skills, projects, experience, education, and achievements in a professional and engaging way. The site is built to be fully responsive, ensuring it looks great on all devices.
